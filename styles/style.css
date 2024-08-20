@@ -19,6 +19,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 nav{
     display: flex;
@@ -106,7 +107,7 @@ nav .bars{
     font-family: "Clicker Script", cursive;
     font-weight: 400;
 }
-.header__text button{
+button{
     color: black;
     padding: 10px 14px;
     background-color: #F9C06A;
@@ -117,7 +118,7 @@ nav .bars{
     max-width: 200px;
     width: 100%;
 }
-.header__text button:hover{
+button:hover{
     color: #F9C06A;
     background-color: transparent;
     border: 2px solid #F9C06A;
@@ -125,9 +126,46 @@ nav .bars{
 
 
 
+/* ---------------header----------------- */
 
+/* ---------------about----------------- */
 
+.about{
+    padding: 50px 10px;
+}
+.title{
+    font-family: Playfair Display;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 71.98px;
+    text-align: left;
+    color: #603809;
+}
 
+.about__text p{
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    color: #707070;
+}
+.about__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.about__box .about__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__img img{
+    width: 100%;
+}
 
 
 
@@ -149,6 +187,13 @@ nav .bars{
     .header__text h1{
         font-size: 180px;
     }
+    .title{
+        font-size: 45px;
+        line-height: 71.98px;
+    }
+    .about__text p{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width:1024px) {
     .container{
@@ -156,6 +201,12 @@ nav .bars{
     }
     .header__text h1{
         font-size: 150px;
+    }
+    .about__box .about__text{
+        width: 60%;
+    }
+    .about__img{
+        width: 40%;
     }
 }
 @media screen and (max-width:768px) {
@@ -227,6 +278,15 @@ nav .bars{
     .header__text p{
         width: 100%;
     }
+    .about__box{
+        flex-direction: column;
+    }
+    .about__box .about__text{
+        width: 100%;
+    }
+    .about__img{
+        width: 100%;
+    }
 }
 @media screen and (max-width:600px) {
     .container{
@@ -237,6 +297,10 @@ nav .bars{
     }
     .header__text h1{
         font-size: 100px;
+    }
+    .title{
+        font-size: 35px;
+        line-height: 50px;
     }
 }
 @media screen and (max-width:390px) {
