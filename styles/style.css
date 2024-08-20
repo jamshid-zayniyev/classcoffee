@@ -130,7 +130,8 @@ button:hover{
 
 /* ---------------about----------------- */
 
-.about{
+.about,
+.menu{
     padding: 50px 10px;
 }
 .title{
@@ -138,16 +139,14 @@ button:hover{
     font-size: 54px;
     font-weight: 700;
     line-height: 71.98px;
-    text-align: left;
     color: #603809;
 }
 
-.about__text p{
+.description{
     font-family: Playfair Display;
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
-    text-align: left;
     color: #707070;
 }
 .about__box{
@@ -169,13 +168,56 @@ button:hover{
 
 
 
+/* -------------menu--------------- */
 
 
+.menu__title{
+    width: 100%;
+    text-align: center;
+}
 
-
-
-
-
+.menu__box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    row-gap: 40px;
+    margin: 20px 0px;
+}
+.menu__box .menu__item{
+    border: 1px solid #F9C06A6B;
+    background-color: #FFF9F1;
+}
+.menu__box .menu__item img{
+    width: 100%;
+}
+.menu__item{
+    position: relative;
+    text-align: center;
+}
+.menu__item button{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%,0px);
+    max-width: 150px;
+    width: 100%;
+}
+.menu__text{
+    padding: 30px 0px;
+    text-align: center;
+}
+.menu__text h2{
+font-size: 22px;
+font-weight: 700;
+line-height: 29.33px;
+color: #603809;
+}
+.menu__text p{
+font-size: 16px;
+font-weight: 400;
+line-height: 21.33px;
+margin: 10px 0px;
+}
 
 @media screen and (max-width:1440px) {
     .container{
@@ -191,7 +233,7 @@ button:hover{
         font-size: 45px;
         line-height: 71.98px;
     }
-    .about__text p{
+    .description{
         font-size: 16px;
     }
 }
@@ -207,6 +249,9 @@ button:hover{
     }
     .about__img{
         width: 40%;
+    }
+    .menu__box{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 @media screen and (max-width:768px) {
@@ -287,6 +332,9 @@ button:hover{
     .about__img{
         width: 100%;
     }
+    .menu__box{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media screen and (max-width:600px) {
     .container{
@@ -312,5 +360,8 @@ button:hover{
     }
     .header__text h1{
         font-size: 80px;
+    }
+    .menu__box{
+        grid-template-columns: repeat(1,1fr);
     }
 }
