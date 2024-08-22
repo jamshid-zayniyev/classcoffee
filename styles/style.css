@@ -187,6 +187,35 @@ button:hover{
     border: 1px solid #F9C06A6B;
     background-color: #FFF9F1;
 }
+.menu__item button:hover{
+    background-color: white;
+}
+.menu__item button:focus{
+    cursor: progress;
+}
+#review__item{
+    padding-top: 20px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#review__item:hover{
+    background-color: #FFEED8;
+}
+#review__item img{
+    max-width: 88px;
+    width: 100%;
+}
+#review__item p{
+    max-width: 192px;
+    width: 100%;
+    margin: 10px auto;
+font-size: 20px;
+font-weight: 400;
+line-height: 26.66px;
+text-align: center;
+color: #707070;
+
+}
 .menu__box .menu__item img{
     width: 100%;
 }
@@ -218,6 +247,66 @@ font-weight: 400;
 line-height: 21.33px;
 margin: 10px 0px;
 }
+#menu__bottom__title{
+    font-size: 30px;
+}
+
+/* --------------------advertise---------------------- */
+
+.advertise{
+    position: relative;
+    margin: 40px 0px;
+}
+.advertise__bgad{
+    width: 100%;
+}
+.advertise__bean{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 100%;
+}
+.advertise__box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advertise__text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.advertise__box img{
+    width: 100%;
+}
+.advertise__box h1{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 71.98px;
+    text-align: left;
+    color: white;
+}
+
+
+.advertise__box p{
+font-size: 20px;
+font-weight: 400;
+line-height: 34px;
+text-align: left;
+color: white;
+width: 50%;
+
+
+}
+
+
+
+
 
 @media screen and (max-width:1440px) {
     .container{
@@ -236,6 +325,14 @@ margin: 10px 0px;
     .description{
         font-size: 16px;
     }
+    .advertise__box h1{
+        font-size: 46px;
+        line-height: 51.98px;
+    }
+    .advertise__box p{
+        font-size: 18px;
+        width: 80%;
+        }
 }
 @media screen and (max-width:1024px) {
     .container{
@@ -335,6 +432,9 @@ margin: 10px 0px;
     .menu__box{
         grid-template-columns: repeat(2,1fr);
     }
+    .advertise__box img{
+        display: none;
+    }
 }
 @media screen and (max-width:600px) {
     .container{
@@ -349,6 +449,25 @@ margin: 10px 0px;
     .title{
         font-size: 35px;
         line-height: 50px;
+    }
+    .advertise__box h1{
+        font-size: 36px;
+            text-align: center;
+            line-height: 41.98px;
+    }
+    .advertise__box p{
+            text-align: center;
+            font-size: 18px;
+        width: 100%;
+        }
+        .advertise__box button{
+            margin: 0 auto;
+        }
+    .advertise{
+        height: 350px;
+    }
+    .advertise img{
+        height: 100%;
     }
 }
 @media screen and (max-width:390px) {
